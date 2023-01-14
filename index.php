@@ -17,16 +17,9 @@
                 <?php endforeach; ?>
             </ul>
         </section>
+
+
     <?php endif; ?>
-
-    <?php
-    print_r($productList);
-
-
-    print_r($products);
-
-
-    ?>
 
     <?php if (isset($products) && isset($totalProducts)): ?>
         <a class="button" href="add.php">Add new album</a>
@@ -45,13 +38,16 @@
             </thead>
             <tfoot>
             <tr>
-                <td colspan="10" class="has-text-centered">&copy; My Collection with <?= $totalProducts; ?> products</td>
+                <td colspan="10" class="has-text-centered">&copy; My Collection with <?= $totalProducts; ?>products
+                </td>
             </tr>
             </tfoot>
             <tbody>
             <?php foreach ($products as $product): ?>
                 <tr>
                     <td class="is-vcentered">
+                        <img class="image is-64x64" src="uploaded_img/<?= $product->image; ?>"
+                             alt="<?= $product->name_cn; ?>"/>
                     </td>
                     <td class="is-vcentered"><?= $product->id; ?></td>
                     <td class="is-vcentered"><?= $product->name_cn; ?></td>
