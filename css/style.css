@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&display=swap');
+
+:root {
+    --main-color: #E9EDCA;
+    --main-color-dark: #CDD5AE;
+    --grass-green: #5F6C37;
+    --pine-tree: #283517;
+    --corn-silk: #FFF9E1;
+    --wood: #A98467;
+    --darkwood: #754D2E;
+    --border: .2rem solid var(--main-color);
+
+}
+
+/*general settings*/
+* {
+    font-family: 'ZCOOL XiaoWei';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+*::selection {
+    background-color: var(--wood);
+    color: var(--darkwood);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+/*setting scrollbar start*/
+::-webkit-scrollbar {
+    height: .5rem;
+    width: .8rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color-dark);
+}
+
+/*setting scrollbar ends*/
+
+/*body setting*/
+/*to make sure the content will be stay in center no matter the screen width*/
+body {
+    min-width: 20rem;
+    margin: 0 auto;
+}
+
+/* start setting for buttons*/
+.delete-btn,
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1.3rem 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.delete-btn {
+    background-color: var(--darkwood);
+    color: var(--corn-silk);
+}
+
+.btn {
+    background-color: var(--corn-silk);
+    color: var(--pine-tree);
+}
+
+.delete-btn:hover,
+.btn:hover {
+    letter-spacing: .2rem;
+}
+
+/*end setting buttons*/
+
+/*header setting - menu starts*/
+.header {
+    /*position: sticky;*/
+    max-width: 100rem;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.39);
+    padding: 0 1rem;
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-size: 3em;
+}
+
+.header .flex .navbar a {
+    margin: 0 2rem;
+    color: var(--grass-green);
+}
+
+.header .flex .navbar a:hover {
+    color: var(--wood);
+}
+
+.header .flex .icons > * {
+    font-size: 2.5rem;
+    color: var(--grass-green);
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+.header .flex .icons > *:hover {
+    color: var(--wood);
+}
+
+.hide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+img.logo {
+    width: 15rem;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(1rem);
+    }
+}
+
+.header .flex .profile {
+    width: 30rem;
+    position: absolute;
+    top: 120%;
+    right: 2rem;
+    background-color: var(--main-color);
+    border: var(--border);
+    padding: 1.5rem;
+    text-align: center;
+    display: none;
+    animation: fadeIn .2s linear;
+}
+
+.header .flex .profile.active {
+    display: block;
+}
+
+.header .flex .profile .name {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+.header .flex .profile .flex {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.header .flex .profile .account {
+    font-size: 1.7rem;
+    color: var(--main-color-dark);
+    margin-top: 1.5rem;
+}
+
+.header .flex .profile .account a {
+    color: var(--pine-tree);
+    text-decoration: underline;
+}
+
+.header .flex .profile .account a:hover {
+    color: var(--wood);
+}
+
+#logo{
+
+    order: 2; /*center logo*/
+}
+
+#menu-btn {
+    display: none;
+}
+
+/*header setting - menu ends*/
+
+main{
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+}
+
+div.hero {
+    background: url(../img/hero.jpg);
+    box-shadow: inset 10px 4px 10px rgba(232, 120, 33, 0.25);
+    /* filter: blur(1px); */
+}
+
+h2 {
+    background: rgba(255, 255, 255, 0.36);
+    font-family: 'ZCOOL KuaiLe';
+    font-size: 4em;
+    color: var(--darkwood);
+    margin: 0;
+    padding: 2em;
+}
+
+section {
+    margin: 2vw 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'ZCOOL KuaiLe';
+    font-size: 5em;
+    color: var(--grass-green);
+    margin: 0;
+    padding: 0;
+}
+
+div.new-items {
+    display: flex;
+    margin: 2vw;
+    justify-content: space-around;
+}
+
+div.new-item img {
+    width: 10vw;
+    object-fit: cover;
+}
+
+
+section.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 10px solid gray;
+}
+
+.menu a {
+    font-family: 'ZCOOL KuaiLe';
+    color: var(--grass-green);
+    font-size: 3.5em;
+    margin: 0 2vw;
+}
+
+div.menu-item img {
+    object-fit: cover;
+}
+
+
+/*starts footer setting*/
+.footer{
+    padding: 0;
+}
+
+
+.footer .credit{
+    background-color: var(--main-color-dark);
+    text-align: center;
+    padding:3rem 2rem;
+    font-size: 2rem;
+    color:var(--pine-tree);
+    /* padding-bottom: 10rem; */
+}
+
+.footer .credit span{
+    color:var(--wood);
+}
+/*ends footer setting*/
+
+
+/*media queries*/
+@media (max-width: 960px) {
+
+    html {
+        font-size: .5em;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #menu-btn {
+        display: inline-block;
+        flex-grow: 2;
+    }
+
+    #hide_low_width {
+        display: none;
+    }
+
+    #logo {
+        align-items: center;
+    }
+
+    .header .flex .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        border-top: var(--border);
+        border-bottom: var(--border);
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        margin: 1rem;
+        background-color: var(--corn-silk);
+    }
+
+    .header .flex nav.navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .flex .navbar a {
+        display: block;
+        margin: 2rem;
+    }
+
+}
