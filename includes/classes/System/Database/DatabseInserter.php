@@ -1,6 +1,7 @@
 <?php namespace System\Database;
 
 use System\ProductList\Product;
+use System\Users\Admin;
 
 /**
  * Class DatabaseInserter
@@ -26,6 +27,25 @@ class DatabaseInserter extends Database
             ':description_cn' => $product->description_cn,
             ':description_en' => $product->description_en,
             ':image' => $product->image
+        ]);
+    }
+
+
+    /**
+     * save new admin user
+     *
+     * @param Admin $admin
+     * @return bool
+     */
+
+    public function addAdmin(Admin $admin): bool
+    {
+        $query = 'INSERT INTO admin (username, password)
+                  VALUES (:username, :password)';
+        $statement = $this->connection->prepare($query);
+        return $statement->execute([
+            ':username' => $admin->username,
+            ':password' => $admin->password
         ]);
     }
 }

@@ -4,6 +4,7 @@ require_once 'settings.php';
 require_once 'classes/System/Database/Database.php';
 require_once 'classes/System/ProductList/AllList.php';
 require_once 'classes/System/ProductList/Product.php';
+require_once 'classes/System/Users/Admin.php';
 
 
 //Set variable for errors

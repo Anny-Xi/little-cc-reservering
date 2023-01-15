@@ -239,12 +239,13 @@ h1 {
 
 div.new-items {
     display: flex;
-    margin: 2vw;
+    flex-wrap: wrap;
+    margin: 1vh 0.5vw;
     justify-content: space-around;
 }
 
 div.new-item img {
-    width: 10vw;
+    width: 20vh;
     object-fit: cover;
 }
 

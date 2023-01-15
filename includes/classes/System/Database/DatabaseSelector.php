@@ -3,6 +3,7 @@
 namespace System\Database;
 
 use System\ProductList\Product;
+use System\Users\Admin;
 
 class DatabaseSelector extends Database
 {
@@ -33,5 +34,26 @@ class DatabaseSelector extends Database
         }
 
         return $product;
+    }
+
+
+    /**
+     *
+     * Get user information by its ID
+     *
+     * @param int $id
+     * @return Admin
+     * @throws \Exception
+     */
+    public function getAdminById(int $id): Admin
+    {
+        $statement = $this->connection->prepare('SELECT * FROM admin WHERE id = :id');
+        $statement->execute([':id' => $id]);
+
+        if (($admin = $statement->fetchObject('\\System\\Users\\Admin')) === false) {
+            throw new \Exception('ID is not available in the database');
+        }
+
+        return $admin;
     }
 }

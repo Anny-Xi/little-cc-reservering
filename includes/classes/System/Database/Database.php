@@ -1,8 +1,12 @@
 <?php namespace System\Database;
 
+use Exception;
+use PDO;
+use PDOException;
+
 class Database
 {
-    protected \PDO $connection;
+    protected PDO $connection;
 
     /**
      * Database constructor.
@@ -11,7 +15,7 @@ class Database
      * @param string $username
      * @param string $password
      * @param string $database
-     * @throws \Exception
+     * @throws Exception
      */
     public function __construct(
         private readonly string $host,
@@ -26,22 +30,22 @@ class Database
     /**
      * Retrieve a new PDO instance to communicate with the DB
      *
-     * @throws \Exception
+     * @throws Exception
      */
     private function connect(): void
     {
         try {
-            $this->connection = new \PDO("mysql:dbname=$this->database;host=$this->host", $this->username, $this->password);
-            $this->connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-        } catch (\PDOException $e) {
-            throw new \Exception('DB Connection failed: ' . $e->getMessage());
+            $this->connection = new PDO("mysql:dbname=$this->database;host=$this->host", $this->username, $this->password);
+            $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            throw new Exception('DB Connection failed: ' . $e->getMessage());
         }
     }
 
     /**
-     * @return \PDO
+     * @return PDO
      */
-    public function getConnection(): \PDO
+    public function getConnection(): PDO
     {
         return $this->connection;
     }

@@ -70,6 +70,19 @@
 <!--header section ends-->
 
 <main>
+    <!--check if errors occur -->
+    <?php if (!empty($errors)): ?>
+        <section class="content">
+            <ul class="notification is-danger">
+                <?php foreach ($errors as $error): ?>
+                    <li><?= $error; ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </section>
+        <!--end check-->
+
+    <?php endif; ?>
+
     <!-- heading  -->
     <section class="home">
         <div class="hero">
@@ -82,14 +95,29 @@
         <!-- 新品 会滚动 -->
         <div class="new-items">
             <div class="new-item">
-                <img src="/img/imgplaceholder.jpg" alt="">
+                <img src="img/imgplaceholder.jpg" alt="">
+                <p class="product_basic_info">Product name</p>
+                <p class="product_basic_info">€00,00</p>
             </div>
+
             <div class="new-item">
-                <img src="/img/imgplaceholder.jpg" alt="">
+                <img src="img/imgplaceholder.jpg" alt="">
+                <p class="product_basic_info">Product name</p>
+                <p class="product_basic_info">€00,00</p>
             </div>
+
             <div class="new-item">
-                <img src="/img/imgplaceholder.jpg" alt="">
+                <img src="img/imgplaceholder.jpg" alt="">
+                <p class="product_basic_info">Product name</p>
+                <p class="product_basic_info">€00,00</p>
             </div>
+
+            <div class="new-item">
+                <img src="img/imgplaceholder.jpg" alt="">
+                <p class="product_basic_info">Product name</p>
+                <p class="product_basic_info">€00,00</p>
+            </div>
+
 
         </div>
 
