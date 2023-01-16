@@ -202,6 +202,36 @@ img.logo {
 
 /*header setting - menu ends*/
 
+/*setting for top note */
+.message{
+    position: sticky;
+    top:0;
+    max-width: 1200px;
+    margin:0 auto;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    justify-content: space-between;
+    background-color: var(--corn-silk);
+}
+
+.message span{
+    font-size: 2rem;
+    color:var(--grass-green);
+}
+
+.message i{
+    font-size: 2.5rem;
+    color:var(--wood);
+    cursor: pointer;
+}
+
+.message i:hover{
+    color:var(--pine-tree);
+}
+/*end setting top note*/
+
 main{
     max-width: 100rem;
     margin: 0 auto;
@@ -237,14 +267,14 @@ h1 {
     padding: 0;
 }
 
-div.new-items {
+.new-items {
     display: flex;
     flex-wrap: wrap;
     margin: 1vh 0.5vw;
     justify-content: space-around;
 }
 
-div.new-item img {
+.new-item img {
     width: 20vh;
     object-fit: cover;
 }
@@ -274,6 +304,20 @@ div.menu-item img {
     padding: 0;
 }
 
+.footer .flex{
+    display: flex;
+    align-items: center;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: .5vw 1rem;
+    justify-content: space-around;
+}
+
+.footer .flex div .footer_text{
+    font-size: 2em;
+}
+
+
 
 .footer .credit{
     background-color: var(--main-color-dark);
@@ -287,19 +331,26 @@ div.menu-item img {
 .footer .credit span{
     color:var(--wood);
 }
+
+.footer .credit a{
+    color: var(--corn-silk);
+    font-size: 1rem;
+}
+
 /*ends footer setting*/
 
 
 /*media queries*/
-@media (max-width: 960px) {
+@media (max-width: 1000px) {
 
     html {
-        font-size: .5em;
+        font-size: .45em;
     }
 
 }
 
 @media (max-width: 768px) {
+
 
     #menu-btn {
         display: inline-block;
@@ -334,6 +385,13 @@ div.menu-item img {
     .header .flex .navbar a {
         display: block;
         margin: 2rem;
+    }
+
+    main{
+        max-width: 90vw;
+        margin: 0 auto;
+        padding: 0 1rem;
+
     }
 
 }

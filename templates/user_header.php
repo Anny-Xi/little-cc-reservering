@@ -1,14 +1,12 @@
-<?php
-?>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home</title>
+    <title>Little CC Bakery | <?= $pageTitle ?? ''; ?></title>
+    <meta charset="utf-8"/>
+
+    <!--    bulma style-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
     <!--    swiper for js slider-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
@@ -17,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     <!--    custom css file link-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -32,11 +30,11 @@
 
 
         <nav class="navbar">
-            <a href="../index.php">首页</a>
-            <a href="#">新品</a>
-            <a href="../index.php">所有甜品</a>
-            <a class="hide" href="#">Q&A</a>
-            <a class="hide" href="#">联系方式</a>
+            <a href="<?= BASE_PATH; ?>home">首页</a>
+            <a href="<?= BASE_PATH; ?>home#newItems">新品</a>
+            <a href="<?= BASE_PATH; ?>menu">所有甜品</a>
+            <a class="hide" href="<?= BASE_PATH; ?>about">Q&A</a>
+            <a class="hide" href="<?= BASE_PATH; ?>menu">联系方式</a>
         </nav>
         <a href="#">
             <img class="logo" id="logo" src="img/logo.jpg" alt="logo">
@@ -58,13 +56,12 @@
         <div class="profile">
             <p class="name">Test name</p>
             <div class="flex">
-                <a href="../index.php" class="btn">profile</a>
+                <a href="index.php" class="btn">profile</a>
                 <a href="#" class="delete-btn">logout</a>
             </div>
-            <p class="account"><a href="../index.php">login</a> or <a href="../index.php">register</a></p>
+            <p class="account"><a href="index.php">login</a> or <a href="index.php">register</a></p>
         </div>
 
     </section>
 </header>
 <!--header section ends-->
-</body>

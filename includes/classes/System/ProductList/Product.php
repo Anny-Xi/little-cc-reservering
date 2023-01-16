@@ -44,4 +44,6 @@ class Product
         $statement = $db->prepare($query);
         return $statement->execute([':id' => $this->id]);
     }
+
+
 }

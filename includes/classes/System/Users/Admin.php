@@ -19,7 +19,7 @@ class Admin
                   WHERE id = :id';
         $statement = $db->prepare($query);
         return $statement->execute([
-            ':username' =>$this->username,
+            ':username' => $this->username,
             ':password' => $this->password,
             ':id' => $this->id
         ]);
@@ -31,6 +31,26 @@ class Admin
                   WHERE id = :id';
         $statement = $db->prepare($query);
         return $statement->execute([':id' => $this->id]);
+    }
+
+
+    /**
+     * save new admin user
+     *
+     * @param Admin $admin
+     * @param \PDO $db
+     * @return bool
+     */
+
+    public static function create(Admin $admin, \PDO $db): bool
+    {
+        $query = 'INSERT INTO admin (username, password)
+                  VALUES (:username, :password, :artist, :genre, :year, :tracks, :image)';
+        $statement = $db->prepare($query);
+        return $statement->execute([
+            ':username' => $admin->username,
+            ':password' => $admin->password
+        ]);
     }
 
 

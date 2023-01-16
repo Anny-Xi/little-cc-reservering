@@ -17,6 +17,17 @@ class DatabaseSelector extends Database
         return $this->connection->query('SELECT * FROM products')->fetchAll(\PDO::FETCH_CLASS, '\\System\\ProductList\\Product');
     }
 
+
+    /**
+     * Get all product order by ID DESC
+     *
+     * @return array
+     */
+    public function getNewProducts(): array
+    {
+        return $this->connection->query('SELECT * FROM products ORDER BY `products`.`id` DESC')->fetchAll(\PDO::FETCH_CLASS, '\\System\\ProductList\\Product');
+    }
+
     /**
      * Get a specific product by its ID
      *

@@ -5,25 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f029534-37f4-4415-a804-97057b82a16a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/includes/classes/System/Users/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploaded_img/巴斯克蛋糕.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploaded_img/蛋糕卷四重奏.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8129a961-b741-4720-be1a-292aecb1daba.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8129a961-b741-4720-be1a-292aecb1daba/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8129a961-b741-4720-be1a-292aecb1daba/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8129a961-b741-4720-be1a-292aecb1daba/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/classes/System/Form/Validation/AdminLoginValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/classes/System/Form/Validation/AdminRegisterValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/classes/System/Utils/Image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/classes/System/Utils/Session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/pages/admin_home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/pages/admin_login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/pages/admin_register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/pages/includes/admin_login-post-data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/pages/includes/admin_register-post-data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/pages/includes/album-post-data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/pages/includes/login-post-data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/pages/includes/register-post-data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/pages/templates/admin_home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/pages/templates/admin_login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/pages/templates/admin_register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/pages/templates/menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/pages/update_profile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin_header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user_header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/dabf7e69-b43e-4dfd-9c13-a18c094fa3a2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dabf7e69-b43e-4dfd-9c13-a18c094fa3a2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea4459c6-afb1-4e2b-991e-2b78a3a5890e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea4459c6-afb1-4e2b-991e-2b78a3a5890e/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea4459c6-afb1-4e2b-991e-2b78a3a5890e/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/little-cc-reservering.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/little-cc-reservering.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/classes/System/Database/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/classes/System/Database/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/templates/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/classes/System/Database/DatabaseSelector.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/classes/System/Database/DatabaseSelector.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/classes/System/Database/DatabseInserter.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/classes/System/Database/DatabseInserter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/classes/System/ProductList/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/classes/System/ProductList/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/classes/System/Users/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/classes/System/Users/Admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/initialize.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/initialize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oders.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/oders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quick_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/quick_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/update_address.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/templates/admin_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/update_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/pages/update_address.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,37 +75,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/XAMPP/htdocs/HR/1ste_jaar/little-cc-reservering&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;DEFAULT&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/XAMPP/htdocs/RE_Little_cc_reservering",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "DEFAULT",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;mariadb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mariadb"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\XAMPP\htdocs\HR\1ste_jaar\little-cc-reservering\includes" />
+      <recent name="D:\XAMPP\htdocs\little-cc-reservering\includes\classes\System\Form\Validation" />
+      <recent name="D:\XAMPP\htdocs\little-cc-reservering\includes\pages\includes" />
+      <recent name="D:\XAMPP\htdocs\little-cc-reservering\includes\pages\templates" />
+      <recent name="D:\XAMPP\htdocs\little-cc-reservering\includes\pages" />
+      <recent name="D:\XAMPP\htdocs\little-cc-reservering\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\XAMPP\htdocs\little-cc-reservering\includes\classes\System" />
+      <recent name="D:\XAMPP\htdocs" />
+      <recent name="D:\XAMPP\htdocs\HR\1ste_jaar\little-cc-reservering\includes\pages\templates" />
+      <recent name="D:\XAMPP\htdocs\HR\1ste_jaar\little-cc-reservering\includes\pages" />
       <recent name="D:\XAMPP\htdocs\HR\1ste_jaar\little-cc-reservering\includes\classes\System" />
-      <recent name="D:\XAMPP\htdocs\HR\1ste_jaar\little-cc-reservering\includes" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -95,7 +130,9 @@
       <workItem from="1673724360783" duration="1051000" />
       <workItem from="1673725436290" duration="353000" />
       <workItem from="1673725802261" duration="611000" />
-      <workItem from="1673794901624" duration="3673000" />
+      <workItem from="1673794901624" duration="10915000" />
+      <workItem from="1673809430593" duration="6003000" />
+      <workItem from="1673868463239" duration="13307000" />
     </task>
     <servers />
   </component>

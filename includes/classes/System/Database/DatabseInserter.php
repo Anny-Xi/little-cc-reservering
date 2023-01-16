@@ -31,21 +31,7 @@ class DatabaseInserter extends Database
     }
 
 
-    /**
-     * save new admin user
-     *
-     * @param Admin $admin
-     * @return bool
-     */
 
-    public function addAdmin(Admin $admin): bool
-    {
-        $query = 'INSERT INTO admin (username, password)
-                  VALUES (:username, :password)';
-        $statement = $this->connection->prepare($query);
-        return $statement->execute([
-            ':username' => $admin->username,
-            ':password' => $admin->password
-        ]);
-    }
+
+
 }
